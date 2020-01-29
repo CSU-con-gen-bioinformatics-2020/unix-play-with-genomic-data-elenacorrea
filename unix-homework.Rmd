@@ -271,7 +271,7 @@ gzcat fastq/DPCh_plate1_C11_S35.R1.fq.gz | head -8
 # 33 Do the same to see the first 8 lines of `fastq/DPCh_plate1_C11_S35.R2.fq.gz`
 
 ```{bash}
-
+gzcat fastq/DPCh_plate1_C11_S35.R2.fq.gz | head -8
 ```
 
 # 34 What do you notice about the names of the two reads in each file (Lines 1 and 5, that start with a `@`)
