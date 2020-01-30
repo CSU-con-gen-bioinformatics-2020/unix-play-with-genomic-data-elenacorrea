@@ -346,19 +346,19 @@ Note that this shows that, although the compressed files are not identical, thei
 # 44 using `du` with the `-h` (i.e. "human readable" option) print the file sizes of `R1_all_via_cat.fq` and `copy_of_R1_all_via_cat.fq.gz`.
 
 ```{bash}
-
+du -h R1_all_via_cat.fq copy_of_R1_all_via_cat.fq.gz
 ```
 
 # 45 By what factor (approximately) does the compression save storage space on your disk?
 
 ```
-
+4
 ```
 
 # 46 Remove all files starting with `R1_all` and `copy_of_R1`
 
 ```{bash}
-
+rm R1* copy*
 ```
 
 # 47 Now, print the file sizes (with `du -h`, again) of the files in `bam` to the files in `sam`
