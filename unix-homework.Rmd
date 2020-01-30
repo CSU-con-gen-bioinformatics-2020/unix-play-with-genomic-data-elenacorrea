@@ -325,13 +325,13 @@ cp R1_all_via_cat.fq.gz copy_of_R1_all_via_cat.fq.gz
 # 41 Now, decompress `R1_all_via_cat.fq.gz` into `R1_all_via_cat.fq`
 
 ```{bash}
-
+gzcat R1_all_via_cat.fq.gz > R1_all_via_cat.fq
 ```
 
 # 42 Compute the SHA1 hashes of `R1_all_via_cat.fq` and `R1_all_via_gzcat.fq` to confirm they are identical
 
 ```{bash}
-
+shasum R1_all_via_cat.fq R1_all_via_gzcat.fq
 ```
 
 # 43 But now, gzip `R1_all_via_gzcat.fq` and compare the result to `copy_of_R1_all_via_cat.fq.gz` by computing the SHA1 hash of each
