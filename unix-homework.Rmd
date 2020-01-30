@@ -319,7 +319,7 @@ cat fastq/*R1* > R1_all_via_cat.fq.gz
 # 40 Copy `R1_all_via_cat.fq.gz` to `copy_of_R1_all_via_cat.fq.gz`
 
 ```{bash}
-
+cp R1_all_via_cat.fq.gz copy_of_R1_all_via_cat.fq.gz
 ```
 
 # 41 Now, decompress `R1_all_via_cat.fq.gz` into `R1_all_via_cat.fq`
