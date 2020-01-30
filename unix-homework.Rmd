@@ -307,13 +307,13 @@ wc -l fastq/*R1*
 # 38 Now, gzcat all the `R1` files in `fastq` and redirect that to a file called `R1_all_via_gzcat.fq` in the top directory of the repo
 
 ```{bash}
-
+gzcat fastq/*R1* > R1_all_via_gzcat.fq
 ```
 
 # 39 People are usually familiar with using `cat` to catenate text files.  It turns out that you can also catenate `gzip` compressed files.  The result is another properly gzipped file that can be decompressed.  Catenate all the gzipped `R1` files in `fastq` into a single (still gzipped) file called `R1_all_via_cat.fq.gz`
 
 ```{bash}
-
+cat fastq/*R1* > R1_all_via_cat.fq.gz
 ```
 
 # 40 Copy `R1_all_via_cat.fq.gz` to `copy_of_R1_all_via_cat.fq.gz`
