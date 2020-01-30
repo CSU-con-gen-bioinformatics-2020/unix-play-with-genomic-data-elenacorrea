@@ -390,7 +390,7 @@ head -15 sam/DPCh_plate1_A05_S5.sam
 # 50 Catenate the file `count_files.sh` to _stdout_
 
 ```{bash}
-
+cat count_files.sh
 ```
 
 # 51 Note that `count_files.sh` is a short shell script. Try to execute it with `./count_files.sh`
