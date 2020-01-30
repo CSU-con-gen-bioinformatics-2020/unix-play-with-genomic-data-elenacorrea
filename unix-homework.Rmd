@@ -396,7 +396,9 @@ cat count_files.sh
 # 51 Note that `count_files.sh` is a short shell script. Try to execute it with `./count_files.sh`
 
 ```{bash}
+./count_files.sh
 
+# I did not get an error! It must like me.
 ```
 
 Aha! You should have gotten a permission denied error.  99% of the time that occurs because
