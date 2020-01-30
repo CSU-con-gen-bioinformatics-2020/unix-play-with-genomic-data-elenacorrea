@@ -337,7 +337,8 @@ shasum R1_all_via_cat.fq R1_all_via_gzcat.fq
 # 43 But now, gzip `R1_all_via_gzcat.fq` and compare the result to `copy_of_R1_all_via_cat.fq.gz` by computing the SHA1 hash of each
 
 ```{bash}
-
+gzip R1_all_via_gzcat.fq | shasum
+shasum copy_of_R1_all_via_cat.fq.gz
 ```
 
 Note that this shows that, although the compressed files are not identical, their contents (once decompressed, are identical).
