@@ -364,14 +364,17 @@ rm R1* copy*
 # 47 Now, print the file sizes (with `du -h`, again) of the files in `bam` to the files in `sam`
 
 ```{bash}
-
+du -h bam/DPCh_plate1_A05_S5.bam >> sam/DPCh_plate1_A05_S5.sam
+du -h bam/DPCh_plate1_A05_S5.bam >> sam/DPCh_plate1_A06_S6.sam
 ```
 
 
 # 48 Print the last 15 lines of `sam/DPCh_plate1_A05_S5.sam` to _stdout_
 
 ```{bash}
+tail -15 sam/DPCh_plate1_A05_S5.sam
 
+# oops it looks like I added the du 3 times... don't know how to fix that.
 ```
 
 If it all looks like gibberish to you, despair not!  You will be super familiar with
@@ -381,7 +384,7 @@ this file format within a couple of weeks from now.
 # 49 Print the _first_ 15 lines of `sam/DPCh_plate1_A05_S5.sam` to _stdout_
 
 ```{bash}
-
+head -15 sam/DPCh_plate1_A05_S5.sam
 ```
 
 # 50 Catenate the file `count_files.sh` to _stdout_
