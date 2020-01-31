@@ -396,9 +396,8 @@ cat count_files.sh
 # 51 Note that `count_files.sh` is a short shell script. Try to execute it with `./count_files.sh`
 
 ```{bash}
+chmod 664 count_files.sh
 ./count_files.sh
-
-# I did not get an error! It must like me.
 ```
 
 Aha! You should have gotten a permission denied error.  99% of the time that occurs because
@@ -407,14 +406,21 @@ the file is not user-executable.
 # 52 List (long) `count_files.sh` to see what the permissions are, and then add execute (`x`) permissions to users and groups with the "add-or-subtract permissions syntax" of `chmod`, then long list it again
 
 ```{bash}
-
+ls -l count_files.sh
 ```
-
-
-
+```{bash}
+chmod ug+x count_files.sh
+ls -l count_files.sh
+```
 
 # 53 Use chmod to change permissions of the files in the `silly` directory to match their names. For example for the first one you would use: `chmod 770 FILE-rwxrwx---`.  Use the octal specifiers to `chmod`. Do this for all 5 files (one chmod command for each), and at the end do `ls -l silly` to verify they are correct.
 
 ```{bash}
+chmod 775 silly/DIRdrwxrwxr-x
+chmod 640 silly/FILE-rw-r-----
+chmod 664 silly/FILE-rw-rw-r--
+chmod 740 silly/FILE-rwxr-----
+chmod 774 silly/FILE-rwxrwxr--
 
+ls -l silly
 ```
